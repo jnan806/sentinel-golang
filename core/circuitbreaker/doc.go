@@ -20,6 +20,7 @@
 //  1. SlowRequestRatio: the ratio of slow response time entry(entry's response time is great than max slow response time) exceeds the threshold. The following entry to resource will be broken.
 //
 //                       In SlowRequestRatio strategy, user must set max response time.
+//
 //  2. ErrorRatio: the ratio of error entry exceeds the threshold. The following entry to resource will be broken.
 //  3. ErrorCount: the number of error entry exceeds the threshold. The following entry to resource will be broken.
 //
