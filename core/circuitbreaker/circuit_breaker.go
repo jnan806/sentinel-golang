@@ -128,7 +128,6 @@ type CircuitBreaker interface {
 	OnRequestComplete(rtt uint64, err error)
 }
 
-//================================= circuitBreakerBase ====================================
 // circuitBreakerBase encompasses the common fields of circuit breaker.
 type circuitBreakerBase struct {
 	rule *Rule
