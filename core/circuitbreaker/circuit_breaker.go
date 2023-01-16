@@ -246,7 +246,7 @@ func (b *circuitBreakerBase) fromHalfOpenToClosed() bool {
 	return false
 }
 
-//================================= slowRtCircuitBreaker ====================================
+/*================================= slowRtCircuitBreaker ====================================*/
 type slowRtCircuitBreaker struct {
 	circuitBreakerBase
 	stat                *slowRequestLeapArray
