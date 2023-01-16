@@ -246,7 +246,7 @@ func (b *circuitBreakerBase) fromHalfOpenToClosed() bool {
 	return false
 }
 
-/*================================= slowRtCircuitBreaker ====================================*/
+/* ================================= slowRtCircuitBreaker ==================================== */
 type slowRtCircuitBreaker struct {
 	circuitBreakerBase
 	stat                *slowRequestLeapArray
@@ -438,7 +438,7 @@ func (s *slowRequestLeapArray) allCounter() []*slowRequestCounter {
 	return ret
 }
 
-//================================= errorRatioCircuitBreaker ====================================
+/* ================================= errorRatioCircuitBreaker ==================================== */
 type errorRatioCircuitBreaker struct {
 	circuitBreakerBase
 	minRequestAmount    uint64
@@ -623,7 +623,7 @@ func (s *errorCounterLeapArray) allCounter() []*errorCounter {
 	return ret
 }
 
-//================================= errorCountCircuitBreaker ====================================
+/* ================================= errorCountCircuitBreaker ==================================== */
 type errorCountCircuitBreaker struct {
 	circuitBreakerBase
 	minRequestAmount    uint64
