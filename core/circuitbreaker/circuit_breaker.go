@@ -26,7 +26,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-//
+// State
 //  Circuit Breaker State Machine:
 //
 //                                 switch to open based on rule
